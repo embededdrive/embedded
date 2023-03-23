@@ -15,7 +15,8 @@ $ file [파일명]
 ## C언어 빌드 과정 (gcc)
 
 ### 1. Compile & Assemble
-   - 하나의 소스코드 파일이 0과 1로 구성된 Object 파일이 만들어짐
+
+- 하나의 소스코드 파일로 0과 1로 구성된 Object 파일이 만들어짐
 
 ``` Bash
 $ gcc -c ./[파일명]
@@ -23,7 +24,8 @@ $ gcc -c ./*.c
 ```
 
 ### 2. Linking
-   - 만들어진 Object 파일들 + Library 들을 모아 하나로 합침
+
+- 만들어진 Object 파일들 + Library 들을 모아 하나로 합침
 
 ``` Bash
 $ gcc ./[Object 파일명] ./[Object 파일명] -o ./[출력 파일명]
@@ -35,7 +37,7 @@ $ gcc ./[Object 파일명] ./[Object 파일명] -o ./[출력 파일명]
 
 1. build.sh 파일 vi를 통해 생성
 ``` Bash
-#! /bin/bash
+#!/bin/bash
 
 gcc -c ./[파일명]
 gcc ./[Object 파일명] -o ./[출력 파일명]
@@ -75,7 +77,7 @@ sudo apt install make -y
 
 ## Make 사용방법
 
-1. `makefile` 이라는 스크립트 파일을 만든다
+1. `Makefile` 이라는 스크립트 파일을 만든다
    - make 문법에 맞추어서 작성한다
    - Bash Shell Script 문법과 다르다
 
@@ -95,7 +97,7 @@ $ make
 # CMake
 
 - make 같이 build를 직접적으로 하는 도구가 아니다
-- Makefile 자동생성을 할 수 있는 Build System이다
+- Makefile을 자동생성 할 수 있는 Build System이다
 
 ## CMake의 결과물
 
