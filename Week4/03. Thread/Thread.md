@@ -198,23 +198,3 @@ $ kill -l
 
 $ kill
 ```
-
-
-
-# 엔컬즈스 (ncurses)
-
-- new curses
-- CLI로 GUI같은 App을 만들고자 할 떄 사용하는 라이브러리
-- ex) raspi-config, menu config, htop
-
-## ncurses 설치
-
-``` Shell
-$ sudo apt install libncursesw5-dev
-```
-
-## ncurses 빌드
-
-``` Shell
-$ gcc ./main.c -o ./main -lncursesw && ./main
-```
