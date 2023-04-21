@@ -1,0 +1,1 @@
+cmd_/home/yong/work/day03/hi.ko := ld -r  -m elf_x86_64 -z noexecstack   --build-id=sha1  -T scripts/module.lds -o /home/yong/work/day03/hi.ko /home/yong/work/day03/hi.o /home/yong/work/day03/hi.mod.o;  true

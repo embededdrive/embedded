@@ -1,0 +1,4 @@
+key1:12345
+key2:789456
+key3:123456
+KFC:lalala
